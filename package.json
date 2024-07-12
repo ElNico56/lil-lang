@@ -3,6 +3,7 @@
 	"displayName": "Lil",
 	"description": "VSCode extension for highlighting the Lil programming language",
 	"version": "0.0.1",
+	"publisher": "ElNico56",
 	"repository": {},
 	"engines": {
 		"vscode": "^1.91.0"
