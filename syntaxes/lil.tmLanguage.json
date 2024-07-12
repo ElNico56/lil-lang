@@ -12,7 +12,16 @@
 		},
 		{
 			"name": "entity.name.function.lil",
-			"match": "\\b[\\w?]+(?=\\[)"
+			"patterns": [
+				{
+					"name": "entity.name.function.lil",
+					"match": "\\b(floor|cos|sin|tan|exp|ln|sqrt|count|first|last|sum|min|max|raze|prod|range|keys|list|rows|cols|table|typeof|flip|mag|unit|heading|split|fuse|dict|take|drop|in|join|cross|parse|format|unless|limit|like|window)\\b"
+				},
+				{
+					"name": "entity.name.function.lil",
+					"match": "\\b[\\w?]+(?=\\[)"
+				}
+			]
 		},
 		{
 			"name": "keyword.operator.lil",
