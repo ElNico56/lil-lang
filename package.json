@@ -1,0 +1,34 @@
+{
+	"name": "lil-lang",
+	"displayName": "Lil",
+	"description": "VSCode extension for highlighting the Lil programming language",
+	"version": "0.0.1",
+	"engines": {
+		"vscode": "^1.91.0"
+	},
+	"categories": [
+		"Programming Languages"
+	],
+	"contributes": {
+		"languages": [
+			{
+				"id": "lil",
+				"aliases": [
+					"Lil",
+					"lil"
+				],
+				"extensions": [
+					".lil"
+				],
+				"configuration": "./language-configuration.json"
+			}
+		],
+		"grammars": [
+			{
+				"language": "lil",
+				"scopeName": "source.lil",
+				"path": "./syntaxes/lil.tmLanguage.json"
+			}
+		]
+	}
+}

@@ -1,0 +1,43 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "Lil",
+	"patterns": [
+		{
+			"name": "keyword.control.lil",
+			"match": "\\b(each|in|while|end|on|do|if|elseif|else|where|by|orderby|asc|desc|select|extract|update|from|insert|with|into|send|local)\\b"
+		},
+		{
+			"name": "comment.lil",
+			"match": "#.*"
+		},
+		{
+			"name": "entity.name.function.lil",
+			"match": "\\b[\\w?]+(?=\\[)"
+		},
+		{
+			"name": "keyword.operator.lil",
+			"match": "[\\-\\!\\+\\*\\/\\%\\^\\&\\|\\<\\>\\=\\~\\,\\@\\:\\[\\]\\(\\)\\.]"
+		},
+		{
+			"name": "constant.numeric.lil",
+			"match": "-?\\b\\d*\\.?\\d+\\b"
+		},
+		{
+			"name": "entity.name.function.definition.lil",
+			"match": "(?<=on\\s+)[\\w?]+\\b"
+		},
+		{
+			"name": "string.quoted.double.lil",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.lil",
+					"match": "\\\\."
+				}
+			]
+		}
+	],
+	"repository": {},
+	"scopeName": "source.lil"
+}
